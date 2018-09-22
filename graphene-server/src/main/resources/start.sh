@@ -27,7 +27,7 @@ ROOTDIR=`pwd`
 CONFDIR="${ROOTDIR}/conf"
 LIBDIR="${ROOTDIR}/lib"
 
-JAVA_OPTS="-Xmx4G"
+JAVA_OPTS="-Xmx128G"
 
 cmd="java -jar -server ${JAVA_OPTS} \
 	-Djava.net.preferIPv4Stack=true \
