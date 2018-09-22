@@ -3,7 +3,7 @@ VERSION=8.1.0
 
 set -ex
 wget https://github.com/Lambda-3/DiscourseSimplification/archive/v$VERSION.tar.gz -O DiscourseSimplification.tar.gz
-tar xfa DiscourseSimplification.tar.gz
+tar -xzvf DiscourseSimplification.tar.gz
 cd DiscourseSimplification-$VERSION && mvn install -B -DskipTests && cd ..
 rm -f DiscourseSimplification.tar.gz
 rm -rf DiscourseSimplification-$VERSION 
